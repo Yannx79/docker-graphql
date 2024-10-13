@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t yan640/docker-graphql:0.0.2 .
+        docker build -t yan640/docker-graphql:latest .
 
     - name: Push Docker Image 
       run: |
         docker push yan640/docker-graphql:0.0.2
+        docker push yan640/docker-graphql:latest
       
       
     # - name: Build the Docker image
